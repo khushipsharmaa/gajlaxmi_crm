@@ -1,13 +1,7 @@
-<<<<<<< HEAD
+
 {
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false
 }
-=======
-{
-  "version": 2,
-  "cleanUrls": true,
-  "trailingSlash": false
-}
->>>>>>> 92957739424bdede50a6387fa60355f7dd4d9f14
+
