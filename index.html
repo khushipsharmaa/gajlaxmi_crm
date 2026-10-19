@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f5f2">
+  <title>Gajlaxmi Bank | Society management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-frame">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="Gajlaxmi Bank home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span><strong>Gajlaxmi</strong><small>bank · society management</small></span>
+      </a>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <button class="nav-link is-active" data-page="overview"><span class="nav-icon">◫</span>Overview</button>
+        <button class="nav-link" data-page="members"><span class="nav-icon">♧</span>Members <span class="nav-count" id="member-count">0</span></button>
+        <button class="nav-link" data-page="agents"><span class="nav-icon">◎</span>Agent portal</button>
+        <button class="nav-link" data-page="collections"><span class="nav-icon">↗</span>Collections <span class="nav-badge" id="collection-count">0</span></button>
+        <div class="nav-divider"></div>
+        <div class="workspace-label">FINANCIAL PRODUCTS</div>
+        <button class="nav-link" data-page="savings"><span class="nav-icon">▤</span>Savings</button>
+        <button class="nav-link" data-page="loans"><span class="nav-icon">↙</span>Loans</button>
+        <button class="nav-link" data-page="deposits"><span class="nav-icon">◷</span>RD &amp; FD</button>
+        <div class="nav-divider"></div>
+        <button class="nav-link" data-page="reports"><span class="nav-icon">▥</span>Reports</button>
+        <button class="nav-link" data-page="schemes"><span class="nav-icon">⚙</span>Schemes &amp; controls</button>
+        <button class="nav-link" data-page="demo"><span class="nav-icon">✳</span>Demo workspace <span class="demo-pill">DEMO</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="security-note"><span class="status-dot"></span><span><strong>Demo environment</strong><small>Local data only</small></span></div>
+        <button class="profile-switch" type="button" aria-label="Current profile">
+          <span class="avatar avatar-ink">AD</span><span class="profile-meta"><strong>Admin desk</strong><small>Administrator</small></span><span class="profile-caret">⌄</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main-shell">
+      <header class="topbar">
+        <button class="icon-button menu-toggle" id="menu-toggle" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb"><span>Gajlaxmi Bank</span><span class="crumb-slash">/</span><strong id="page-crumb">Overview</strong></div>
+        <div class="topbar-actions">
+          <span class="today-label" id="today-label"></span>
+          <button class="icon-button notification-button" data-page="collections" aria-label="View pending approvals">♧<span class="notification-dot"></span></button>
+          <button class="avatar avatar-ink top-avatar" aria-label="Administrator profile">AD</button>
+        </div>
+      </header>
+
+      <div class="demo-ribbon"><span class="ribbon-mark">i</span><span><strong>Illustrative demo.</strong> Rates, fees and rules are examples, not society policy. No real payments or messages are sent.</span><button data-page="demo">About this demo <span aria-hidden="true">↗</span></button></div>
+      <section id="page-content" class="page-content" aria-live="polite"></section>
+      <footer class="app-footer"><span>Gajlaxmi Bank</span><span>Local browser demo · Not for production use</span><button data-page="demo">Production requirements</button></footer>
+    </main>
+  </div>
+
+  <dialog class="app-dialog" id="app-dialog" aria-labelledby="dialog-title">
+    <form method="dialog" class="dialog-chrome"><button class="dialog-close" aria-label="Close dialog">×</button></form>
+    <div id="dialog-content"></div>
+  </dialog>
+  <div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+  <script src="finance.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

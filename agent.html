@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111714">
+  <title>Gajlaxmi Bank | Agent portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-portal="agent">
+  <div class="app-frame">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="agent.html" aria-label="Gajlaxmi Bank agent portal">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span><strong>Gajlaxmi</strong><small>collection agent</small></span>
+      </a>
+      <div class="workspace-label">FIELD WORKSPACE</div>
+      <nav class="primary-nav" aria-label="Agent navigation">
+        <button class="nav-link is-active" data-page="agents"><span class="nav-icon">◎</span>My route</button>
+        <button class="nav-link" data-page="collections"><span class="nav-icon">↗</span>Receipts &amp; handovers <span class="nav-badge" id="collection-count">0</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="security-note"><span class="status-dot"></span><span><strong>Illustrative demo</strong><small>No real payments</small></span></div>
+        <div class="profile-switch"><span class="avatar avatar-ink">AG</span><span class="profile-meta"><strong>Collection agent</strong><small>Demo workspace</small></span></div>
+      </div>
+    </aside>
+    <main class="main-shell">
+      <header class="topbar">
+        <button class="icon-button menu-toggle" id="menu-toggle" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb"><span>Gajlaxmi Bank</span><span class="crumb-slash">/</span><strong id="page-crumb">My route</strong></div>
+        <div class="topbar-actions"><span class="today-label" id="today-label"></span><span class="agent-admin-count" id="member-count" aria-label="Demo member count">0</span><a class="button button-small" href="index.html">Admin panel ↗</a></div>
+      </header>
+      <div class="demo-ribbon"><span class="ribbon-mark" aria-hidden="true">i</span><span><strong>Training portal.</strong> Receipts are issued immediately; member balances change only after verification.</span><a href="index.html" class="agent-admin-link">Admin panel ↗</a></div>
+      <section id="page-content" class="page-content" aria-live="polite"></section>
+      <footer class="app-footer"><span>Gajlaxmi Bank · Collection agent portal</span><span>Browser demo · Local data only</span></footer>
+    </main>
+  </div>
+  <dialog class="app-dialog" id="app-dialog" aria-labelledby="dialog-title"><form method="dialog" class="dialog-chrome"><button class="dialog-close" aria-label="Close dialog">×</button></form><div id="dialog-content"></div></dialog>
+  <div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+  <script src="finance.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
